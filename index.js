@@ -31,7 +31,7 @@ function getDateTime() {
         }
 
         // Set the time to how it should be displayed in html
-        time = hours + '</div>' + ":" + '<div id="dateTime">' + minutes + " " + postTime + '</div>'
+        time = hours + ":" + '</div>'  + '<div id="dateTime">' + minutes + " " + postTime + '</div>'
 
         return time
     }
