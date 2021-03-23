@@ -5,8 +5,6 @@
   "description": "A glowing, animated new tab extension",
   "version": "1.0",
 
-  "incognito": "split",
-
   "chrome_url_overrides": {
     "newtab": "public/index.html"
   },
