@@ -12,15 +12,20 @@
   font-size: 40px;
 }
 
-#search {
-  margin-top: 20%;
+#searchForm {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #searchBox {
   background-color: transparent;
-  border: solid 3px black;
+  border: solid 2px black;
   border-radius: 4px;
-  width: 250px;
+  width: 300px;
   padding: 10px;
   margin: 10px;
   color: black;
@@ -30,9 +35,10 @@
   padding: 8px;
   margin: 8px;
   background-color: transparent;
-  border: solid 2px black;
+  border: solid 2px rgb(32, 32, 32);
   border-radius: 4px;
 }
+
 
 html,
 body {
@@ -68,15 +74,19 @@ body {
   }
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgb(45, 45, 45);
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: black;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: black;
 }
