@@ -1,5 +1,5 @@
 {
-    "name": "CleanNewTabs",
+    "name": "Clean New Tab",
     "description": "A new tab extension",
     "version": "1.0",
     "incognito": "split",
