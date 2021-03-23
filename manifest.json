@@ -4,7 +4,7 @@
     "version": "1.0",
     "incognito": "split",
     "chrome_url_overrides": {
-      "newtab": "index.html"
+      "newtab": "public/index.html"
     },
     "manifest_version": 2
   }
