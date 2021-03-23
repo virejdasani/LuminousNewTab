@@ -16,6 +16,24 @@
   margin-top: 20%;
 }
 
+#searchBox {
+  background-color: transparent;
+  border: solid 3px black;
+  border-radius: 4px;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+#searchButton {
+  padding: 8px;
+  margin: 8px;
+  background-color: transparent;
+  border: solid 2px black;
+  border-radius: 4px;
+}
+
 html,
 body {
   /* background-color: rgb(47, 47, 47); */
@@ -48,4 +66,17 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(45, 45, 45);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
 }

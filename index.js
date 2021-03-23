@@ -31,7 +31,7 @@ function getDateTime() {
         }
 
         // Set the time to how it should be displayed in html
-        time = hours + ":" + '</div>'  + '<div id="dateTime">' + minutes + " " + postTime + '</div>'
+        time = hours + ":" + '</div>' + '<div id="dateTime">' + minutes + " " + postTime + '</div>'
 
         return time
     }
@@ -105,7 +105,10 @@ let searchButton = document.getElementById("searchButton")
 let searchBox = document.getElementById("searchBox")
 
 // When search button is clicked
-searchButton.addEventListener("click", function (e) {
-        // Google search
-        window.location.replace("https://www.google.com/search?q=" + searchBox.value);
+searchButton.addEventListener("click", function (event) {
+    // Don't reload the page
+    event.preventDefault()
+    
+    // Google search
+    window.location.replace("https://www.google.com/search?q=" + searchBox.value)
 })
