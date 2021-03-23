@@ -1,6 +1,6 @@
 {
-    "name": "Clean New Tab",
-    "description": "A new tab extension",
+    "name": "Luminous Tab",
+    "description": "A glowing, animated new tab extension",
     "version": "1.0",
     "incognito": "split",
     "chrome_url_overrides": {
