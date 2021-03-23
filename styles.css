@@ -10,3 +10,14 @@
   font-weight: bolder;
   font-size: 40px;
 }
+
+html, body {
+  background-color: rgb(47, 47, 47);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+#search {
+  margin-top: 20%;
+}
