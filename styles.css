@@ -1,0 +1,12 @@
+#greeting {
+  font-weight: normal;
+  font-style: italic;
+  padding-bottom: 2%;
+  font-size: medium;
+}
+
+#dateTime {
+  display: inline;
+  font-weight: bolder;
+  font-size: 40px;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "CleanNewTabs",
+    "description": "A new tab extension",
+    "version": "1.0",
+    "incognito": "split",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "manifest_version": 2
+  }
