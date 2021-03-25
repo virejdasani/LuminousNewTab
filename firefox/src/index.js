@@ -18,11 +18,16 @@ function getDateTime() {
         let time
 
         // Get time in 12hrs
-        if (hours > 12) {
+        if (hours >= 12) {
             hours -= 12
             postTime = "pm"
         } else {
             postTime = "am"
+        }
+
+        // This is to fix a bug because 12pm shows 0
+        if (hours == '0') {
+        	hours = '12'
         }
 
         // Get minutes in double digits at all times
@@ -48,7 +53,7 @@ function getDateTime() {
     } else if (dayNum === 3) {
         day = "Wed"
     } else if (dayNum === 4) {
-        day = "Thr"
+        day = "Thu"
     } else if (dayNum === 5) {
         day = "Fri"
     } else if (dayNum === 6) {
