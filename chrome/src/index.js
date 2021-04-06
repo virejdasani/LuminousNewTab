@@ -27,7 +27,7 @@ function getDateTime() {
 
         // This is to fix a bug because 12pm shows 0
         if (hours == '0') {
-        	hours = '12'
+            hours = '12'
         }
 
         // Get minutes in double digits at all times
@@ -104,16 +104,26 @@ function showGreeting() {
 }
 
 
-// For search operation
-
+// For google search operation
 let searchButton = document.getElementById("searchButton")
 let searchBox = document.getElementById("searchBox")
 
 // When search button is clicked
 searchButton.addEventListener("click", function (event) {
     // Don't reload the page
+    // Without this, window.location.replace is not working
     event.preventDefault()
-    
+
     // Google search
     window.location.replace("https://www.google.com/search?q=" + searchBox.value)
+})
+
+// To open google.com
+let openGoogleButton = document.getElementById("openGoogle")
+openGoogleButton.addEventListener('click', function (event) {
+    // Don't reload the page
+    // Without this, window.location.replace is not working
+    event.preventDefault()
+
+    window.location.replace("https://www.google.com/")
 })
