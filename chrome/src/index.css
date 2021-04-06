@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 #greeting {
   margin-top: 5%;
   font-weight: normal;
-  font-style: italic;
-  padding-bottom: 2%;
+  padding-bottom: 35px;
   font-size: medium;
+  font-family: 'Poppins', sans-serif;
+  ;
 }
 
 #dateTime {
@@ -22,28 +25,44 @@
 }
 
 #searchBox {
-  background-color: transparent;
-  border: solid 2px black;
-  border-radius: 4px;
-  width: 300px;
-  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 22px;
+  width: 330px;
+  padding: 14px;
   margin: 10px;
+  margin-bottom: 25px;
   color: black;
+  font-size: 14px;
+
+  /* This is for the google logo */
+  padding-left: 36px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 10px 0.875rem;
+  background-image: url("/assets/img/googleLogo.png");
 }
 
 #searchButton {
   padding: 8px;
   margin: 8px;
-  background-color: transparent;
-  border: solid 2px rgb(32, 32, 32);
+  background-color: #f8f9fa;
+  border: solid 1px #f0f1f1;
   border-radius: 4px;
+  color: #3c4043;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
 
 html,
 body {
-  /* background-color: rgb(47, 47, 47); */
-  /* background-image: url('LondonFromAbove.jpg'); */
   text-align: center;
   color: white;
   width: 100%;
