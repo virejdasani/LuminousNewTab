@@ -127,3 +127,49 @@ openGoogleButton.addEventListener('click', function (event) {
 
     window.location.replace("https://www.google.com/")
 })
+
+
+
+// For weather info
+
+// First get user IP
+window.onload = function () {
+    // Get Location from IP
+    fetch('http://ip-api.com/json/')
+        .then(function (response) {
+            // console.log(response.json)
+            return response.json()
+        })
+        .then(function (data) {
+            let status = data.status
+            let country = data.country
+            let city = data.city
+            let ip = data.query
+
+            // If the ip, location etc is returned:
+            if (status === "success") {
+                // Fetch the weather api
+                fetch('http://api.weatherapi.com/v1/current.json?key=5f45a1f6e81b45f0b5c74547210604&q=Mumbai&aqi=no')
+                .then(function (weatherResponse) {
+                    return weatherResponse.json()
+                })
+                .then(function (weatherData) {
+                    let state = weatherData.location.region
+                    let lastUpdated = weatherData.current.last_updated
+                    let tempC = weatherData.current.temp_c
+                    let tempF = weatherData.current.temp_f
+                    // console.log(state, lastUpdated, tempC, tempF)
+
+                    document.getElementById("weatherInfo").innerHTML = `
+                        <button id="tempC">
+                            ${tempC} °C
+                        </button>
+                        
+                    `
+
+                })
+            }
+
+        })
+}
+

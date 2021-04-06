@@ -6,7 +6,6 @@
   padding-bottom: 35px;
   font-size: medium;
   font-family: 'Poppins', sans-serif;
-  ;
 }
 
 #dateTime {
@@ -16,6 +15,7 @@
 }
 
 #searchForm {
+  text-align: center;
   margin: 0;
   position: absolute;
   top: 45%;
@@ -54,6 +54,21 @@
   padding-right: 12px;
 }
 
+#weatherInfo {
+  margin-left: 30px;
+  margin-top: 25px;
+  display: flex;
+}
+
+#tempC {
+  font-size: 32px;
+  /* font-family: 'Poppins', sans-serif; */
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+
 /* This is so that no blue outline shows up when clicking one of these elements */
 input:focus,
 select:focus,
@@ -64,7 +79,6 @@ button:focus {
 
 html,
 body {
-  text-align: center;
   color: white;
   width: 100%;
   margin: 0;
