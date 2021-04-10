@@ -24,7 +24,40 @@
         <button id="openGoogle">Open Google</button>
     </form>
 
+    <div id="bookmarks">
 
+    </div>
+
+    <div>
+        <a title="Add Bookmark" href="#modal">
+            <button id="openBookmarksModalButton">
+                +
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="modalDialog">
+        <div>
+            <!-- The 'X' to close the modal -->
+            <a href="#close" title="Close" class="close">X</a>
+            <h1>Your Bookmarks</h1>
+            <p id="modalBookmarks">
+                You have no Bookmarks
+            </p>
+            <!-- Add bookmark form -->
+            <form id="addBookmarkForm">
+                <h2>Add a bookmark</h2>
+                <input id="bookmarkURL" placeholder="Enter website url (Eg: google.com)"></br>
+                <input id="bookmarkNameField" placeholder="Bookmark Name (Eg: Google)"></br>
+                <button id="addBookmarkButton">
+                    ADD
+                </button>
+            </form>
+
+        </div>
+    </div>
 
     <script src="/src/index.js"></script>
 </body>
