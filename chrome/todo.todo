@@ -1,0 +1,6 @@
+- Add bookmark to chrome.storage from bookmarks.js
+- Learn about it here - https://www.youtube.com/watch?v=fDERPeXGzPY
+- Also here - https://developer.chrome.com/docs/extensions/reference/storage/
+
+- After setting bookmarks to local storage, retrieve them and add below google search button
+- Fetch the sites icons and set them to the bookmarks

@@ -54,36 +54,6 @@
   padding-right: 12px;
 }
 
-
-/* Bookmarks */
-#addBookmarkForm input{
-  width: 250px;
-  padding: 6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-#addBookmarkButton {
-  background-color: #3c4043;
-  color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 3px;
-  margin-top: 10px;
-}
-
-#openBookmarksModalButton {
-  border: solid 1px black;
-  background-color: transparent;
-  margin-left: 36px;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  font-size: 20px;
-  position: fixed;
-  top: 92%;
-}
-
 #weatherInfo {
   margin-left: 30px;
   margin-top: 25px;
@@ -160,6 +130,37 @@ body {
 #modal {
   color: rgb(34, 34, 34);
 
+}
+
+
+
+/* Bookmarks */
+#addBookmarkForm input{
+  width: 250px;
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#addBookmarkButton {
+  background-color: #3c4043;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+#openBookmarksModalButton {
+  border: solid 1px black;
+  background-color: transparent;
+  margin-left: 36px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  position: fixed;
+  top: 92%;
 }
 
 /* Without this, the close button looks misshapen */
