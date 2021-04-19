@@ -43,7 +43,7 @@
   background-image: url("/assets/img/googleLogo.png");
 }
 
-#searchButton, #openGoogle {
+#searchButton, #openGoogle, #openIncognito {
   padding: 8px;
   margin: 8px;
   background-color: #f8f9fa;
