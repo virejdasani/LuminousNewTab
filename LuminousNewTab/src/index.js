@@ -129,6 +129,23 @@ openGoogleButton.addEventListener('click', function (event) {
 })
 
 
+// To open private mode
+let openIncognitoButton = document.getElementById("openIncognito");
+openIncognitoButton.addEventListener('click', function (event) {
+    // Don't reload the page
+    event.preventDefault();
+    if (typeof browser  != 'undefined') {
+        browser.windows.create({
+            url: ["https://www.google.com/"]
+        });
+    } else if (typeof chrome  != 'undefined') {
+        chrome.windows.create({
+            url: ["https://www.google.com/"]
+        });
+    }
+})
+
+
 
 // For weather info
 
