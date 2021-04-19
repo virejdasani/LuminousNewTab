@@ -136,11 +136,13 @@ openIncognitoButton.addEventListener('click', function (event) {
     event.preventDefault();
     if (typeof browser  != 'undefined') {
         browser.windows.create({
-            url: ["https://www.google.com/"]
+            url: ["https://www.google.com/"],
+             "incognito": true
         });
     } else if (typeof chrome  != 'undefined') {
         chrome.windows.create({
-            url: ["https://www.google.com/"]
+            url: ["https://www.google.com/"],
+             "incognito": true
         });
     }
 })
