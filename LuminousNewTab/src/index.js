@@ -149,7 +149,7 @@ window.onload = function () {
             // If the ip, location etc is returned:
             if (status === "success") {
                 // Fetch the weather api
-                fetch('http://api.weatherapi.com/v1/current.json?key=5f45a1f6e81b45f0b5c74547210604&q='+ city +'&aqi=no')
+                fetch('http://api.weatherapi.com/v1/current.json?key='+ weatherAPI_KEY +'&q='+ city +'&aqi=no')
                 .then(function (weatherResponse) {
                     return weatherResponse.json()
                 })
