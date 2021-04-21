@@ -3,7 +3,7 @@
 
   "name": "Luminous New Tab",
   "description": "A glowing, animated new tab extension",
-  "version": "3.0",
+  "version": "4.0",
 
   "chrome_url_overrides": {
     "newtab": "public/index.html"
