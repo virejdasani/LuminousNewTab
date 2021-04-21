@@ -156,13 +156,20 @@ window.onload = function () {
                 .then(function (weatherData) {
                     let state = weatherData.location.region
                     let lastUpdated = weatherData.current.last_updated
-                    let tempC = weatherData.current.temp_c
-                    let tempF = weatherData.current.temp_f
+                    // List of all states that use fahrenheit.
+                    let countriesThatUseF = ['United States', 'Bahamas', 'Cayman Islands', 'Liberia', 'Palau', 'Micronesia', 'Marshall Islands']
                     // console.log(state, lastUpdated, tempC, tempF)
+                    let tempLetter = 'C'
+                    let temp = weatherData.current.temp_c
+                    // Checks to see if the country is in the list of countries that uses fahrenheit
+                    if (countriesThatUseF.includes(country)) {
+                        tempLetter = 'F'
+                        temp = weatherData.current.temp_f
+                    }
 
                     document.getElementById("weatherInfo").innerHTML = `
-                        <button id="tempC">
-                            ${tempC} °C
+                        <button id="temp">
+                            ${temp} °${tempLetter}
                         </button>
                         
                     `

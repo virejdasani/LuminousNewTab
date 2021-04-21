@@ -60,7 +60,7 @@
   display: flex;
 }
 
-#tempC {
+#temp {
   font-size: 32px;
   /* font-family: 'Poppins', sans-serif; */
   border: none;
