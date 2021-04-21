@@ -169,7 +169,7 @@ window.onload = function () {
 
                     document.getElementById("weatherInfo").innerHTML = `
                         <button id="temp">
-                            ${temp} °{tempLetter}
+                            ${temp} °${tempLetter}
                         </button>
                         
                     `
