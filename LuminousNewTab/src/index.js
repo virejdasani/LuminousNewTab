@@ -48,7 +48,7 @@ function getDateTime() {
     // Assign day names to dayNum
 
     // This should increase performance
-    // No need to do multiple if tests if it's already mapped
+    // No need to do multiple if tests if it's already mapped.
     let dayMap = {
         1: 'Mon',
         2: 'Tue',
@@ -77,7 +77,7 @@ function getDateTime() {
 
     // Assign month names to monthNum
     // This should increase performance
-    // No need to do multiple if tests if it's already mapped
+    // No need to do multiple if tests if it's already mapped.
     let monthMap = {
         1: 'Jan',
         2: 'Feb',
