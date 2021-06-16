@@ -1,4 +1,4 @@
-// Initial function call for date and time
+// Initial function call to show date and time
 showGreeting()
 
 // Function to get the date and time
@@ -45,10 +45,7 @@ function getDateTime() {
     // Initial getTime function call
     time = getTime()
 
-    // Assign day names to dayNum
-
-    // This should increase performance
-    // No need to do multiple if tests if it's already mapped.
+    // Assign day names to dayMap
     let dayMap = {
         1: 'Mon',
         2: 'Tue',
@@ -57,27 +54,11 @@ function getDateTime() {
         5: 'Fri',
         6: 'Sat',
         7: 'Sun'
-    };
+    }
+
     day = dayMap[dayNum]
-        // if (dayNum === 1) {
-        //     day = "Mon"
-        // } else if (dayNum === 2) {
-        //     day = "Tue"
-        // } else if (dayNum === 3) {
-        //     day = "Wed"
-        // } else if (dayNum === 4) {
-        //     day = "Thu"
-        // } else if (dayNum === 5) {
-        //     day = "Fri"
-        // } else if (dayNum === 6) {
-        //     day = "Sat"
-        // } else {
-        //     day = "Sun"
-        // }
 
     // Assign month names to monthNum
-    // This should increase performance
-    // No need to do multiple if tests if it's already mapped.
     let monthMap = {
         1: 'Jan',
         2: 'Feb',
@@ -91,33 +72,9 @@ function getDateTime() {
         10: 'Oct',
         11: 'Nov',
         12: 'Dec'
-    };
+    }
+
     month = monthMap[monthNum]
-        // if (monthNum === 1) {
-        //     month = "Jan"
-        // } else if (monthNum === 2) {
-        //     month = "Feb"
-        // } else if (monthNum === 3) {
-        //     month = "Mar"
-        // } else if (monthNum === 4) {
-        //     month = "Apr"
-        // } else if (monthNum === 5) {
-        //     month = "May"
-        // } else if (monthNum === 6) {
-        //     month = "Jun"
-        // } else if (monthNum === 7) {
-        //     month = "Jul"
-        // } else if (monthNum === 8) {
-        //     month = "Aug"
-        // } else if (monthNum === 9) {
-        //     month = "Sep"
-        // } else if (monthNum === 10) {
-        //     month = "Oct"
-        // } else if (monthNum === 11) {
-        //     month = "Nov"
-        // } else if (monthNum === 12) {
-        //     month = "Dec"
-        // }
 
     // It's 7:38 on Thr, 31 Dec
     let greeting = "It's " + '<div id="dateTime">' + time + " on " + '<div id="dateTime">' + day + ", " + date + " " + month + '</div>'
@@ -133,13 +90,12 @@ function showGreeting() {
     setTimeout(showGreeting, 2000)
 }
 
-
 // For google search operation
 let searchButton = document.getElementById("searchButton")
 let searchBox = document.getElementById("searchBox")
 
 // When search button is clicked
-searchButton.addEventListener("click", function(event) {
+searchButton.addEventListener("click", function (event) {
     // Don't reload the page
     // Without this, window.location.replace is not working
     event.preventDefault()
@@ -150,7 +106,7 @@ searchButton.addEventListener("click", function(event) {
 
 // To open google.com
 let openGoogleButton = document.getElementById("openGoogle")
-openGoogleButton.addEventListener('click', function(event) {
+openGoogleButton.addEventListener('click', function (event) {
     // Don't reload the page
     // Without this, window.location.replace is not working
     event.preventDefault()
@@ -158,19 +114,16 @@ openGoogleButton.addEventListener('click', function(event) {
     window.location.replace("https://www.google.com/")
 })
 
-
-
 // For weather info
-
 // First get user IP
-window.onload = function() {
+window.onload = function () {
     // Get Location from IP
     fetch('http://ip-api.com/json/')
-        .then(function(response) {
+        .then(function (response) {
             // console.log(response.json)
             return response.json()
         })
-        .then(function(data) {
+        .then(function (data) {
             let status = data.status
             let country = data.country
             let city = data.city
@@ -180,18 +133,18 @@ window.onload = function() {
             if (status === "success") {
                 // Fetch the weather api
                 fetch('http://api.weatherapi.com/v1/current.json?key=' + weatherAPI_KEY + '&q=' + city + '&aqi=no')
-                    .then(function(weatherResponse) {
+                    .then(function (weatherResponse) {
                         return weatherResponse.json()
                     })
-                    .then(function(weatherData) {
+                    .then(function (weatherData) {
                         let state = weatherData.location.region
                         let lastUpdated = weatherData.current.last_updated
-                            // List of all states that use fahrenheit.
+                        // List of all states that use fahrenheit.
                         let countriesThatUseF = ['United States', 'Bahamas', 'Cayman Islands', 'Liberia', 'Palau', 'Micronesia', 'Marshall Islands']
-                            // console.log(state, lastUpdated, tempC, tempF)
+                        // console.log(state, lastUpdated, tempC, tempF)
                         let tempLetter = 'C'
                         let temp = weatherData.current.temp_c
-                            // Checks to see if the country is in the list of countries that uses fahrenheit
+                        // Checks to see if the country is in the list of countries that uses fahrenheit
                         if (countriesThatUseF.includes(country)) {
                             tempLetter = 'F'
                             temp = weatherData.current.temp_f
