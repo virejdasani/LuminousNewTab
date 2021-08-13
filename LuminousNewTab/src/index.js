@@ -113,8 +113,17 @@ openGoogleButton.addEventListener('click', function (event) {
 
     window.location.replace("https://www.google.com/")
 })
+
+// opening and closing modal
 document.querySelectorAll(".toggleModal").forEach(x => {
     x.addEventListener('click', () => document.querySelector('#modal').classList.toggle('modalShown'))
+})
+
+// closing modal on esc button
+document.addEventListener("keydown", function (event) {
+    if(event.keyCode === 27 && document.querySelector("#modal").classList.contains('modalShown')){
+        document.querySelector('#modal').classList.toggle('modalShown')
+    }
 })
 
 // For weather info

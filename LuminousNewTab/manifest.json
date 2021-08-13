@@ -6,11 +6,11 @@
   "version": "4.0",
 
   "chrome_url_overrides": {
-    "newtab": "public/index.html"
+    "newtab": "./public/index.html"
   },
 
   "browser_action": {
-    "default_icon": "assets/img/icon.png"
+    "default_icon": "./assets/img/icon.png"
   },
 
   "icons": {
