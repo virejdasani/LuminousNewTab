@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="../src/index.css">
     <title>New Tab</title>
 </head>
 
@@ -29,11 +29,9 @@
     </div>
 
     <div>
-        <a title="Add Bookmark" href="#modal">
-            <button id="openBookmarksModalButton">
+            <button id="openBookmarksModalButton" title="Add Bookmark" class="toggleModal">
                 +
             </button>
-        </a>
     </div>
 
 
@@ -41,7 +39,7 @@
     <div id="modal" class="modalDialog">
         <div>
             <!-- The 'X' to close the modal -->
-            <a href="#close" title="Close" class="close">X</a>
+            <button class="toggleModal close" title="Close">X</button>
             <h1>Bookmarks/Apps functionality coming soon</h1>
             <!-- <p id="modalBookmarks">
                 You have no Bookmarks
@@ -59,8 +57,8 @@
         </div>
     </div>
 
-    <script src="/src/config.js"></script>
-    <script src="/src/index.js"></script>
+    <script src="../src/config.js"></script>
+    <script src="../src/index.js"></script>
 </body>
 
 </html>
