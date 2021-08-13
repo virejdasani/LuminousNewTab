@@ -29,7 +29,7 @@
     </div>
 
     <div>
-            <button id="openBookmarksModalButton" title="Add Bookmark" onclick="document.querySelector('#modal').classList.toggle('modalShown');">
+            <button id="openBookmarksModalButton" title="Add Bookmark" onclick="toggleModal();">
                 +
             </button>
     </div>
@@ -39,7 +39,7 @@
     <div id="modal" class="modalDialog">
         <div>
             <!-- The 'X' to close the modal -->
-            <button onclick="document.querySelector('#modal').classList.toggle('modalShown');" title="Close" class="close">X</button>
+            <button onclick="toggleModal();" title="Close" class="close">X</button>
             <h1>Bookmarks/Apps functionality coming soon</h1>
             <!-- <p id="modalBookmarks">
                 You have no Bookmarks
