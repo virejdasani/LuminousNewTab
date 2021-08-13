@@ -113,10 +113,9 @@ openGoogleButton.addEventListener('click', function (event) {
 
     window.location.replace("https://www.google.com/")
 })
-
-function toggleModal() {
-    document.querySelector('#modal').classList.toggle('modalShown');
-}
+document.querySelectorAll(".toggleModal").forEach(x => {
+    x.addEventListener('click', () => document.querySelector('#modal').classList.toggle('modalShown'))
+})
 
 // For weather info
 // First get user IP
