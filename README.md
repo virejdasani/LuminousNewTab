@@ -14,7 +14,7 @@ New tabs will show the time and let you do Google searches too!
 ![](https://github.com/virejdasani/LuminousNewTab/blob/master/StoreAssets/SC3.png)
 
 ## 💻 Contribution
-For coributions please checkout [CONTRIBUTING.md](/CONTRIBUTING.md)
+For contributions please check out [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## 📄 License
 Distributed under the **MIT LICENSE**. See [LICENSE](/LICENSE) for more information.
