@@ -1,4 +1,4 @@
-## Luminous New Tab
+# Luminous New Tab
 Luminous new tab is a beautiful new tab browser extension that has an animated gradient background.                
 New tabs will show the time and let you do Google searches too!
 
