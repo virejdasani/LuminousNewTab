@@ -35,7 +35,7 @@
 	color: black;
 	font-size: 15px;
 
-	/* This is for the google logo */
+	/* This is for the search logo */
 	padding-left: 40px;
 	background-size: 16px 16px;
 	background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 }
 
 #searchButton,
-#openGoogle {
+#openSearch {
 	padding: 8px;
 	margin: 8px;
 	background-color: #f8f9fa;
@@ -277,3 +277,13 @@ body {
 	background: #fa3f6f;
 }
 
+#settings {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.75vw;
+	opacity: 0.75;
+	color: white;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
