@@ -4,14 +4,14 @@
   margin-top: 5%;
   font-weight: normal;
   padding-bottom: 35px;
-  font-size: medium;
+  font-size: 34px;
   font-family: 'Poppins', sans-serif;
 }
 
 #dateTime {
   display: inline;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 44px;
 }
 
 #searchForm {
@@ -74,7 +74,6 @@
 /* This is so that no blue outline shows up when clicking one of these elements */
 input:focus,
 select:focus,
-textarea:focus,
 button:focus {
   outline: none;
 }
@@ -173,22 +172,6 @@ body {
 }
 
 /* For custom placeholder colors */
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(45, 45, 45);
-  opacity: 1;
-  /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: rgb(45, 45, 45);
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: rgb(45, 45, 45);
-}
 
 /* For modal */
 #modal {
@@ -196,33 +179,6 @@ body {
 }
 
 /* Bookmarks */
-#addBookmarkForm input {
-  width: 250px;
-  padding: 6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-#addBookmarkButton {
-  background-color: #3c4043;
-  color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 3px;
-  margin-top: 10px;
-}
-
-#openBookmarksModalButton {
-  border: none;
-  background-color: transparent;
-  margin-left: 20px;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  position: fixed;
-  top: 92%;
-  cursor: pointer;
-}
 
 /* Without this, the close button looks misshapen */
 * {
@@ -236,58 +192,6 @@ body {
 
 .modalShown {
   display: block !important;
-}
-
-.modalDialog {
-  font-family: 'Poppins', sans-serif;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  -webkit-transition: opacity 100ms ease-in;
-  -moz-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-  display: none;
-}
-
-.modalDialog>div {
-  max-width: 800px;
-  width: 90%;
-  position: relative;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 3px;
-  background: #fff;
-}
-
-.close {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f26d7d;
-  color: #fff;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 34px;
-  height: 34px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
-  padding-top: 5px;
-  border: none;
-}
-
-.close:hover {
-  background: #fa3f6f;
 }
 
 #settings_changesearch {
@@ -337,16 +241,12 @@ body {
   animation-duration: 0.4s;
 }
 
-.yes,
+
 .no {
   border: none;
   padding: 7px 14px;
   font-size: 1rem;
   border-radius: 5px;
-}
-
-.yes {
-  background-color: #00ff00;
 }
 
 .no {
