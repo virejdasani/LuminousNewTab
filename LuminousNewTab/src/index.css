@@ -174,11 +174,7 @@ body {
 /* For custom placeholder colors */
 
 /* For modal */
-#modal {
-  color: rgb(34, 34, 34);
-}
 
-/* Bookmarks */
 
 /* Without this, the close button looks misshapen */
 * {
@@ -224,12 +220,14 @@ body {
 }
 
 #modal {
+  /* background-color: rgba(256, 256, 256, 0.95); */
   background-color: #fff;
+  color: rgb(34, 34, 34);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 200px; */
+  width: 60%;
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
@@ -241,16 +239,9 @@ body {
   animation-duration: 0.4s;
 }
 
-
-.no {
-  border: none;
-  padding: 7px 14px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-.no {
-  background-color: #ff0000;
+hr {
+  border-bottom: 1px solid #3c4043;
+  width: 80%;
 }
 
 #close-btn {
@@ -263,6 +254,15 @@ body {
 }
 
 /* modal part end */
+
+.inline {
+  display: flex;
+}
+
+#searchEngineLogo {
+  width: 28px;
+  height: 28px;
+}
 
 /* animation part */
 @keyframes animatemodal {
