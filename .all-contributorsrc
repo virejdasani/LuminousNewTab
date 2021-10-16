@@ -13,6 +13,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "BreadcrumbIsTaken",
+      "name": "Brando!",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63469489?v=4",
+      "profile": "http://breadcrumb.fun",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
