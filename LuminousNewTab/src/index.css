@@ -1,74 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 #greeting {
-	margin-top: 5%;
-	font-weight: normal;
-	padding-bottom: 35px;
-	font-size: medium;
-	font-family: 'Poppins', sans-serif;
+  margin-top: 5%;
+  font-weight: normal;
+  padding-bottom: 35px;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
 }
 
 #dateTime {
-	display: inline;
-	font-weight: bolder;
-	font-size: 40px;
+  display: inline;
+  font-weight: bolder;
+  font-size: 40px;
 }
 
 #searchForm {
-	text-align: center;
-	margin: 0;
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #searchBox {
-	background-color: white;
-	border: none;
-	border-radius: 22px;
-	width: 330px;
-	padding: 14px;
-	margin: 10px;
-	margin-bottom: 25px;
-	color: black;
-	font-size: 15px;
+  background-color: white;
+  border: none;
+  border-radius: 22px;
+  width: 330px;
+  padding: 14px;
+  margin: 10px;
+  margin-bottom: 25px;
+  color: black;
+  font-size: 15px;
 
-	/* This is for the search logo */
-	padding-left: 40px;
-	background-size: 16px 16px;
-	background-repeat: no-repeat;
-	background-position: 14px 0.875rem;
-	background-image: url('../assets/img/googleLogo.png');
+  /* This is for the search logo */
+  padding-left: 40px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 14px 0.875rem;
+  background-image: url('../assets/img/googleLogo.png');
 }
 
 #searchButton,
 #openSearch {
-	padding: 8px;
-	margin: 8px;
-	background-color: #f8f9fa;
-	border: solid 1px #f0f1f1;
-	border-radius: 4px;
-	color: #3c4043;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-top: 4px;
-	cursor: pointer;
+  padding: 8px;
+  margin: 8px;
+  background-color: #f8f9fa;
+  border: solid 1px #f0f1f1;
+  border-radius: 4px;
+  color: #3c4043;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  cursor: pointer;
 }
 
 #weatherInfo {
-	margin-left: 30px;
-	margin-top: 25px;
-	display: flex;
+  margin-left: 30px;
+  margin-top: 25px;
+  display: flex;
 }
 
 #temp {
-	font-size: 32px;
-	/* font-family: 'Poppins', sans-serif; */
-	border: none;
-	background-color: transparent;
-	color: rgb(255, 255, 255);
+  font-size: 32px;
+  /* font-family: 'Poppins', sans-serif; */
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 
 /* This is so that no blue outline shows up when clicking one of these elements */
@@ -76,210 +76,221 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-	outline: none;
+  outline: none;
 }
+
 button {
-	margin: 20px;
-  }
-  .custom-btn {
-	width: 130px;
-	height: 40px;
-	color: #fff;
-	border-radius: 5px;
-	padding: 10px 25px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 500;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	position: relative;
-	display: inline-block;
-	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-	 7px 7px 20px 0px rgba(0,0,0,.1),
-	 4px 4px 5px 0px rgba(0,0,0,.1);
-	outline: none;
-  }
-  
-  
-  /* light */
-  .btn-light {
-	border: none;
-	color: #000;
-  }
-  .btn-light:after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	top: 0;
-	left: 0;
-	direction: rtl;
-	z-index: -1;
-	box-shadow:
-	 -7px -7px 20px 0px #fff9,
-	 -4px -4px 5px 0px #fff9,
-	 7px 7px 20px 0px #0002,
-	 4px 4px 5px 0px #0001;
-	transition: all 0.3s ease;
-  }
-  .btn-light:hover {
-	color: #000;
-  }
-  .btn-light:hover:after {
-	left: auto;
-	right: 0;
-	width: 100%;
-  }
-  .btn-light:active {
-	top: 2px;
-  }
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+
+/* light */
+.btn-light {
+  border: none;
+  color: #000;
+}
+
+.btn-light:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  color: #000;
+}
+
+.btn-light:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-light:active {
+  top: 2px;
+}
+
 /* This is for the gradient background */
 html,
 body {
-	color: white;
-	width: 100%;
-	margin: 0;
-	width: 100%;
-	height: 100vh;
-	/* Gradient BG inspired by @P1N2O (CodePen) */
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 600% 600%;
-	animation: gradient 15s ease infinite;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	overflow: hidden;
+  color: white;
+  width: 100%;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  /* Gradient BG inspired by @P1N2O (CodePen) */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
 
-	50% {
-		background-position: 100% 50%;
-	}
+  50% {
+    background-position: 100% 50%;
+  }
 
-	100% {
-		background-position: 0% 50%;
-	}
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* For custom placeholder colors */
 ::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: rgb(45, 45, 45);
-	opacity: 1;
-	/* Firefox */
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(45, 45, 45);
+  opacity: 1;
+  /* Firefox */
 }
 
 :-ms-input-placeholder {
-	/* Internet Explorer 10-11 */
-	color: rgb(45, 45, 45);
+  /* Internet Explorer 10-11 */
+  color: rgb(45, 45, 45);
 }
 
 ::-ms-input-placeholder {
-	/* Microsoft Edge */
-	color: rgb(45, 45, 45);
+  /* Microsoft Edge */
+  color: rgb(45, 45, 45);
 }
 
 /* For modal */
 #modal {
-	color: rgb(34, 34, 34);
+  color: rgb(34, 34, 34);
 }
 
 /* Bookmarks */
 #addBookmarkForm input {
-	width: 250px;
-	padding: 6px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+  width: 250px;
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #addBookmarkButton {
-	background-color: #3c4043;
-	color: white;
-	border: none;
-	padding: 8px;
-	border-radius: 3px;
-	margin-top: 10px;
+  background-color: #3c4043;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  margin-top: 10px;
 }
 
 #openBookmarksModalButton {
-	border: solid 1px black;
-	background-color: transparent;
-	margin-left: 36px;
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	font-size: 20px;
-	position: fixed;
-	top: 92%;
-	cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: fixed;
+  top: 92%;
+  cursor: pointer;
 }
 
 /* Without this, the close button looks misshapen */
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
+
 .modalShown {
-	display: block !important;
+  display: block !important;
 }
+
 .modalDialog {
-	font-family: 'Poppins', sans-serif;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 99999;
-	-webkit-transition: opacity 100ms ease-in;
-	-moz-transition: opacity 100ms ease-in;
-	transition: opacity 100ms ease-in;
-	display: none;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  display: none;
 }
-.modalDialog > div {
-	max-width: 800px;
-	width: 90%;
-	position: relative;
-	margin: 10% auto;
-	padding: 20px;
-	border-radius: 3px;
-	background: #fff;
+
+.modalDialog>div {
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 3px;
+  background: #fff;
 }
+
 .close {
-	font-family: Arial, Helvetica, sans-serif;
-	background: #f26d7d;
-	color: #fff;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 34px;
-	height: 34px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-	padding-top: 5px;
-	border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f26d7d;
+  color: #fff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 34px;
+  height: 34px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  padding-top: 5px;
+  border: none;
 }
+
 .close:hover {
-	background: #fa3f6f;
+  background: #fa3f6f;
 }
 
 #settings_changesearch {
-	font-family: 'Poppins', sans-serif;
-	color: rgb(104, 104, 104);
+  font-family: 'Poppins', sans-serif;
+  color: rgb(104, 104, 104);
 }
