@@ -35,7 +35,7 @@
 	color: black;
 	font-size: 15px;
 
-	/* This is for the google logo */
+	/* This is for the search logo */
 	padding-left: 40px;
 	background-size: 16px 16px;
 	background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 }
 
 #searchButton,
-#openGoogle {
+#openSearch {
 	padding: 8px;
 	margin: 8px;
 	background-color: #f8f9fa;
@@ -53,6 +53,7 @@
 	color: #3c4043;
 	padding-left: 12px;
 	padding-right: 12px;
+	padding-top: 4px;
 	cursor: pointer;
 }
 
@@ -230,6 +231,7 @@ body {
 	display: block !important;
 }
 .modalDialog {
+	font-family: 'Poppins', sans-serif;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -277,3 +279,7 @@ body {
 	background: #fa3f6f;
 }
 
+#settings_changesearch {
+	font-family: 'Poppins', sans-serif;
+	color: rgb(104, 104, 104);
+}
