@@ -1,4 +1,3 @@
-var engine = localStorage.getItem("searchEngine") || "Google" // google is the default
 const engines = [
 	{
 		"name": "Google",
@@ -28,14 +27,34 @@ function updateSearch() {
 	document.getElementById("searchButton").textContent = currentEngine.name + " Search"
 	document.getElementById("openSearch").textContent = "Open " + currentEngine.name
 }
-updateSearch()
-document.getElementById("settings").onclick = function() {
+
+var engine
+if (typeof browser === "undefined") { // we're running on chrome
+	chrome.storage.local.get("searchEngine", function(res){
+		engine = res.searchEngine || "Google" // google is the default
+		updateSearch()
+	})
+} else { // we're running on firefox
+	browser.storage.local.get("searchEngine").then(res => {
+		engine = res.searchEngine || "Google" // google is the default
+		updateSearch()
+	})
+}
+
+document.getElementById("settings_changesearch").onclick = function() {
+	if (!engine) return
+
 	var newEngine = engines.findIndex(element => element.name == engine) + 1
 	if (newEngine > engines.length - 1) newEngine = 0 // wrap around to the first engine
 	engine = engines[newEngine].name
 
-	localStorage.setItem("searchEngine", engine)
-	updateSearch()
+	if (typeof browser === "undefined") { // we're running on chrome
+		chrome.storage.local.set({"searchEngine": engine}, function(){
+			updateSearch()
+		})
+	} else { // we're running on firefox
+		browser.storage.local.set({"searchEngine": engine}).then(updateSearch())
+	}
 }
 
 // Initial function call to show date and time
