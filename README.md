@@ -1,6 +1,6 @@
 # Luminous New Tab
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Luminous new tab is a beautiful new tab browser extension that has an animated gradient background.                
 New tabs will show the time and let you do Google searches too!
@@ -35,6 +35,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://breadcrumb.fun"><img src="https://avatars.githubusercontent.com/u/63469489?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brando!</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=BreadcrumbIsTaken" title="Code">💻</a></td>
     <td align="center"><a href="https://www.deviantart.com/lateralus138"><img src="https://avatars.githubusercontent.com/u/21045862?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ian Pride</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=Lateralus138" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/5alidshammout"><img src="https://avatars.githubusercontent.com/u/73162518?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khalid shammout</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=5alidshammout" title="Code">💻</a></td>
+    <td align="center"><a href="http://pradumnasaraf.me"><img src="https://avatars.githubusercontent.com/u/51878265?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pradumna Saraf</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=Pradumnasaraf" title="Documentation">📖</a></td>
   </tr>
 </table>
 
