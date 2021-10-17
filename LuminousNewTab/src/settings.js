@@ -1,0 +1,98 @@
+// For custom search engines
+
+const engines = [
+  {
+    name: "Google",
+    url: "https://google.com/",
+    search: "https://google.com/search?q=",
+    icon: "../assets/img/googleLogo.png",
+  },
+  {
+    name: "DuckDuckGo",
+    url: "https://duckduckgo.com/",
+    search: "https://duckduckgo.com/?q=",
+    icon: "../assets/img/ddgLogo.png",
+  },
+  {
+    name: "YouTube",
+    url: "https://youtube.com/",
+    search: "https://youtube.com/results?search_query=",
+    icon: "../assets/img/ytLogo.png",
+  },
+];
+
+// Set search engine
+function updateSearch() {
+  var currentEngine = engines.find((element) => element.name == engine);
+  document.getElementById(
+    "searchBox"
+  ).style.backgroundImage = `url("${currentEngine.icon}")`;
+  document.getElementById("searchBox").textContent =
+    "Search " + currentEngine.name;
+  document.getElementById("searchButton").textContent =
+    currentEngine.name + " Search";
+  document.getElementById("openSearch").textContent =
+    "Open " + currentEngine.name;
+  document.getElementById("currentEngineName").textContent =
+    "Search Engine: " + currentEngine.name;
+}
+
+var engine;
+if (typeof browser === "undefined") {
+  // we're running on chrome
+  chrome.storage.local.get("searchEngine", function (res) {
+    engine = res.searchEngine || "Google"; // google is the default
+    updateSearch();
+  });
+} else {
+  // we're running on firefox
+  browser.storage.local.get("searchEngine").then((res) => {
+    engine = res.searchEngine || "Google"; // google is the default
+    updateSearch();
+  });
+}
+
+document.getElementById("settings_changesearch").onclick = function () {
+  if (!engine) return;
+
+  var newEngine = engines.findIndex((element) => element.name == engine) + 1;
+  if (newEngine > engines.length - 1) newEngine = 0; // wrap around to the first engine
+  engine = engines[newEngine].name;
+
+  if (typeof browser === "undefined") {
+    // we're running on chrome
+    chrome.storage.local.set({ searchEngine: engine }, function () {
+      updateSearch();
+    });
+  } else {
+    // we're running on firefox
+    browser.storage.local.set({ searchEngine: engine }).then(updateSearch());
+  }
+};
+
+// For search operation
+let searchButton = document.getElementById("searchButton");
+let searchBox = document.getElementById("searchBox");
+
+// When search button is clicked
+searchButton.addEventListener("click", function (event) {
+  // Don't reload the page
+  // Without this, window.location.replace is not working
+  event.preventDefault();
+
+  // Search
+  var currentEngine = engines.find((element) => element.name == engine);
+
+  window.location.replace(currentEngine.search + searchBox.value);
+});
+
+// To open search engine
+let openSearchButton = document.getElementById("openSearch");
+openSearchButton.addEventListener("click", function (event) {
+  // Don't reload the page
+  // Without this, window.location.replace is not working
+  event.preventDefault();
+
+  var currentEngine = engines.find((element) => element.name == engine);
+  window.location.replace(currentEngine.url);
+});
