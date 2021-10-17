@@ -3,7 +3,7 @@
   "name": "Luminous New Tab",
   "description": "A glowing, animated new tab extension",
   "version": "5.0",
-  "permissions": ["bookmarks", "storage", "topSites", "chrome://favicon/"],
+  "permissions": ["bookmarks", "storage", "chrome://favicon/"],
   "chrome_url_overrides": {
     "newtab": "./public/index.html"
   },
