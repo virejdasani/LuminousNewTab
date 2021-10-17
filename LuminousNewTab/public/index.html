@@ -32,7 +32,7 @@
 
   <!-- Modal Open Button -->
   <button id="open-btn" class="toggleModal">
-    <img src="../assets/img/settingsIcon.png" alt="" style="width: 20px;">
+    <img src="../assets/img/settingsIcon.png" alt="" id="settingsIcon">
   </button>
 
   <!-- Modal Background and Modal -->
@@ -40,10 +40,14 @@
     <div id="modal">
       <span id="close-btn">&times;</span>
       <h1 id="settingsTitle">Settings</h1>
-      <hr>
-      <p id="currentEngineName">Search Engine: </p>
 
-      <a href="#" id="settings_changesearch">Switch Search Engine</a>
+      <h3>Search Engine</h3>
+      <div id="availableSearchEngines"></div>
+      <div class="inline">
+        <p id="currentEngineName">Search Engine: </p>
+
+        <a href="#" id="settings_changesearch">Switch Search Engine</a>
+      </div>
     </div>
   </div>
 

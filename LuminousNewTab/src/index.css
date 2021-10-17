@@ -183,7 +183,6 @@ body {
 }
 
 #settings_changesearch {
-  font-family: 'Poppins', sans-serif;
   color: rgb(104, 104, 104);
 }
 
@@ -199,6 +198,10 @@ body {
   cursor: pointer;
 }
 
+#settingsIcon {
+  width: 20px;
+}
+
 /* modal part */
 #modal-background {
   display: none;
@@ -212,7 +215,6 @@ body {
 }
 
 #modal {
-  /* background-color: rgba(256, 256, 256, 0.95); */
   background-color: #fff;
   color: rgb(34, 34, 34);
   position: absolute;
@@ -224,7 +226,6 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   font-size: 1.5rem;
   animation-name: animatemodal;
@@ -245,10 +246,18 @@ hr {
   color: #ff0000;
 }
 
+#settingsTitle {
+  padding-bottom: 40px;
+  margin: 0;
+  text-decoration: underline;
+}
+
 /* modal part end */
 
 .inline {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #searchEngineLogo {

@@ -6,18 +6,14 @@ const engines = [
     url: "https://google.com/",
     search: "https://google.com/search?q=",
     icon: "../assets/img/googleLogo.png",
+    id: "google",
   },
   {
     name: "DuckDuckGo",
     url: "https://duckduckgo.com/",
     search: "https://duckduckgo.com/?q=",
     icon: "../assets/img/ddgLogo.png",
-  },
-  {
-    name: "YouTube",
-    url: "https://youtube.com/",
-    search: "https://youtube.com/results?search_query=",
-    icon: "../assets/img/ytLogo.png",
+    id: "ddg",
   },
 ];
 
@@ -34,7 +30,7 @@ function updateSearch() {
   document.getElementById("openSearch").textContent =
     "Open " + currentEngine.name;
   document.getElementById("currentEngineName").textContent =
-    "Search Engine: " + currentEngine.name;
+    "Current Search Engine: " + currentEngine.name + ".";
 }
 
 var engine;
