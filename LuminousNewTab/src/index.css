@@ -17,12 +17,20 @@
 #searchForm {
   text-align: center;
   margin: 0;
-  position: absolute;
+  /* position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+/* #mainContent {
+    position: absolute;
   top: 45%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+} */
 
 #searchBox {
   background-color: white;
@@ -269,28 +277,10 @@ hr {
 /* animation part end */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* For the Bookmarks */
 
 #bookmarks {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,8 +355,4 @@ hr {
   color: #bbb;
   line-height: 1;
   transition: ease-in-out 0.25s opacity;
-}
-
-#bookmarks {
-  margin-top: 25%;
 }

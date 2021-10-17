@@ -5,14 +5,14 @@ const dumpBookmarkers = (subTree) => {
   let bookmarkNum = 0;
   for (const bookmark of subTree[0].children) {
     bookmarkNum++;
-    // Check that the bookmark is not a folder
+    // Check that the bookmark is not a folder and hasn't passed the maxBookmarkNum limit
     if (!bookmark.children && bookmarkNum < maxBookmarkNum + 1) {
       ntp.appendChild(createItem(bookmark));
     }
+    // If it is a bookmark, then remove 1 from bookmarkNum so another bookmark can be appended
     if (bookmark.children) {
       bookmarkNum--;
     }
-    console.log(bookmark);
   }
 };
 
@@ -80,3 +80,5 @@ document.addEventListener(
   "DOMContentLoaded",
   chrome.bookmarks.getSubTree("1", dumpBookmarkers)
 );
+
+// Thanks to: https://github.com/robertoentringer/chrome-ext-ntp-bookmarkers/
