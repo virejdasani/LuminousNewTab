@@ -119,10 +119,10 @@ if (typeof browser === "undefined") {
 }
 
 document.getElementById("toggleBookmarks").addEventListener("click", () => {
-  console.log("clicked");
+  // console.log("clicked");
 
   if (displayBookmarks == true) {
-    console.log("hiding bookmarks");
+    // console.log("hiding bookmarks");
 
     if (typeof browser === "undefined") {
       // we're running on chrome
@@ -139,7 +139,7 @@ document.getElementById("toggleBookmarks").addEventListener("click", () => {
       updateBookmarkPrefs();
     }
   } else {
-    console.log("showing bookmarks");
+    // console.log("showing bookmarks");
 
     if (typeof browser === "undefined") {
       // we're running on chrome
