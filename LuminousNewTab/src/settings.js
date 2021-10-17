@@ -162,8 +162,10 @@ document.getElementById("toggleBookmarks").addEventListener("click", () => {
 function updateBookmarkPrefs() {
   if (displayBookmarks) {
     document.getElementById("bookmarks").style.display = "block";
+    document.getElementById("greeting").style.marginTop = "155px";
   } else {
     document.getElementById("bookmarks").style.display = "none";
+    document.getElementById("greeting").style.marginTop = "15rem";
   }
 }
 
