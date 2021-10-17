@@ -29,7 +29,7 @@ function updateSearch() {
   document.getElementById("openSearch").textContent =
     "Open " + currentEngine.name;
   document.getElementById("currentEngineName").textContent =
-    "Current Search Engine: " + currentEngine.name + ".";
+    "Current Search Engine: " + currentEngine.name;
 }
 
 var engine;
