@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 #greeting {
-  margin-top: 5%;
+  margin-top: 155px;
   font-weight: normal;
   padding-bottom: 35px;
   font-size: 34px;
@@ -65,6 +65,8 @@
   margin-left: 30px;
   margin-top: 25px;
   display: flex;
+  position: absolute;
+  top: 0;
 }
 
 #temp {
@@ -326,15 +328,18 @@ hr {
 
 .icon {
   display: inline-block;
-  background-color: #00000050;
+  background-color: #00000060;
   border-radius: 50%;
   margin: 0.5rem;
   transition: background-color ease 0.15s;
 }
 
 .icon img {
-  padding: 1rem;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
 }
+
 
 .item,
 .edit {
@@ -351,7 +356,7 @@ hr {
 .hover .icon,
 .edit:hover .icon {
   cursor: pointer;
-  background-color: #00000090;
+  background-color: #00000080;
 }
 
 .showInfo .moveHandler {
@@ -360,7 +365,6 @@ hr {
 }
 
 /* For ios style toggle button */
-
 label {
   display: block;
   width: 54px;
