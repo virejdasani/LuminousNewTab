@@ -77,7 +77,7 @@ function getDateTime() {
   let dayNum = today.getUTCDay();
   let date = today.getDate();
   let day;
-  let monthNum = today.getMonth() + 1;
+  let monthNum = today.getMonth();
   let month;
 
   function getTime() {
@@ -130,25 +130,25 @@ function getDateTime() {
     4: "Thu",
     5: "Fri",
     6: "Sat",
-    7: "Sun",
+    0: "Sun",
   };
 
   day = dayMap[dayNum];
 
   // Assign month names to monthNum
   let monthMap = {
-    1: "Jan",
-    2: "Feb",
-    3: "Mar",
-    4: "Apr",
-    5: "May",
-    6: "Jun",
-    7: "Jul",
-    8: "Aug",
-    9: "Sep",
-    10: "Oct",
-    11: "Nov",
-    12: "Dec",
+    0: "Jan",
+    1: "Feb",
+    2: "Mar",
+    3: "Apr",
+    4: "May",
+    5: "Jun",
+    6: "Jul",
+    7: "Aug",
+    8: "Sep",
+    9: "Oct",
+    10: "Nov",
+    11: "Dec",
   };
 
   month = monthMap[monthNum];
