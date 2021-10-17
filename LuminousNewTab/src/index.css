@@ -424,3 +424,15 @@ input:checked+label:active>i {
 input:checked+label {
   background-color: #008FFF;
 }
+
+#about {
+  margin-top: 25px;
+}
+
+#aboutText {
+  font-size: 18px;
+}
+
+.smallText {
+  font-size: 24px;
+}
