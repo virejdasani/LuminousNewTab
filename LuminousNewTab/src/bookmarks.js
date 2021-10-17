@@ -1,4 +1,4 @@
-var maxBookmarkNum = 12;
+var maxBookmarks = 12;
 
 const dumpBookmarkers = (subTree) => {
   const ntp = document.getElementById("ntp");
@@ -6,7 +6,7 @@ const dumpBookmarkers = (subTree) => {
   for (const bookmark of subTree[0].children) {
     bookmarkNum++;
     // Check that the bookmark is not a folder and hasn't passed the maxBookmarkNum limit
-    if (!bookmark.children && bookmarkNum < maxBookmarkNum + 1) {
+    if (!bookmark.children && bookmarkNum < maxBookmarks + 1) {
       ntp.appendChild(createItem(bookmark));
     }
     // If it is a bookmark, then remove 1 from bookmarkNum so another bookmark can be appended
@@ -43,6 +43,7 @@ const createItem = (bookmark) => {
   item.className = "item";
   item.href = bookmark.url;
   item.dataset.id = bookmark.id;
+  item.id = "bookmarkIndex" + bookmark.index;
   item.appendChild(icon);
   item.appendChild(text);
   hoverEvents(item);
@@ -76,9 +77,8 @@ const saveOrder = (items) => {
     chrome.bookmarks.move(items[i].dataset.id, { index: i });
 };
 
-document.addEventListener(
-  "DOMContentLoaded",
-  chrome.bookmarks.getSubTree("1", dumpBookmarkers)
-);
+document.addEventListener("DOMContentLoaded", () => {
+  chrome.bookmarks.getSubTree("1", dumpBookmarkers);
+});
 
-// Thanks to: https://github.com/robertoentringer/chrome-ext-ntp-bookmarkers/
+// Thanks to https://github.com/robertoentringer/chrome-ext-ntp-bookmarkers/

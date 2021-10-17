@@ -166,3 +166,45 @@ function updateBookmarkPrefs() {
     document.getElementById("bookmarks").style.display = "none";
   }
 }
+
+// // For bookmark number
+
+// function updateBookmarkNumber() {
+//   console.log(numBookmarksToShow);
+// }
+
+// var bookmarkLimit;
+// var numBookmarksToShow;
+
+// if (typeof browser === "undefined") {
+//   // we're running on chrome
+//   chrome.storage.local.get("bookmarkLimit", function (res) {
+//     numBookmarksToShow = res.bookmarkLimit || 12;
+//   });
+// } else {
+//   // we're running on firefox
+//   browser.storage.local.get("bookmarkLimit").then((res) => {
+//     numBookmarksToShow = res.bookmarkLimit || 12;
+//   });
+// }
+
+// document.getElementById("submitBookmarkNumber").onclick = function (e) {
+//   e.preventDefault();
+
+//   numBookmarksToShow = document.getElementById("bookmarksNumberInput").value;
+
+//   if (typeof browser === "undefined") {
+//     // we're running on chrome
+//     chrome.storage.local.set(
+//       { bookmarkLimit: numBookmarksToShow },
+//       function () {
+//         updateBookmarkNumber();
+//       }
+//     );
+//   } else {
+//     // we're running on firefox
+//     browser.storage.local
+//       .set({ bookmarkLimit: numBookmarksToShow })
+//       .then(updateBookmarkNumber());
+//   }
+// };
