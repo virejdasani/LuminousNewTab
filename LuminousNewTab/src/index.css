@@ -38,9 +38,9 @@
 
   /* This is for the search logo */
   padding-left: 40px;
-  background-size: 16px 16px;
+  background-size: 22px 22px;
   background-repeat: no-repeat;
-  background-position: 14px 0.875rem;
+  background-position: 10px 0.7rem;
   background-image: url('../assets/img/googleLogo.png');
 }
 
@@ -278,7 +278,6 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
   user-select: none;
 }
 
@@ -307,7 +306,6 @@ hr {
   border-radius: 50%;
   margin: 0.5rem;
   transition: background-color ease 0.15s;
-  box-shadow: 0 0 5px 0 rgb(40, 40, 40);
 }
 
 .icon img {
@@ -322,7 +320,7 @@ hr {
   width: 100px;
   margin: 1rem;
   outline: none;
-  text-shadow: 2px 2px 2px rgb(40, 40, 40);
+  text-shadow: 1px 1px 1px rgb(40, 40, 40);
   transition: ease-in-out 0.25s background-color;
 }
 
@@ -335,17 +333,4 @@ hr {
 .showInfo .moveHandler {
   z-index: 1;
   opacity: 1;
-}
-
-.moveHandler {
-  z-index: -1;
-  cursor: move;
-  opacity: 0;
-  top: 0;
-  right: 0;
-  padding: 0.5rem;
-  font-size: 1rem;
-  color: #bbb;
-  line-height: 1;
-  transition: ease-in-out 0.25s opacity;
 }
