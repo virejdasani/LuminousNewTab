@@ -36,6 +36,10 @@
   color: black;
   font-size: 15px;
 
+  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+
   /* This is for the search logo */
   padding-left: 40px;
   background-size: 22px 22px;
