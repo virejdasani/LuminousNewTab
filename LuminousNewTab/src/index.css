@@ -275,7 +275,7 @@ hr {
 /* For the Bookmarks */
 
 #bookmarks {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +329,7 @@ hr {
 .hover .icon,
 .edit:hover .icon {
   cursor: pointer;
-  background-color: #fff;
+  background-color: #00000090;
 }
 
 .showInfo .moveHandler {
