@@ -1,5 +1,4 @@
 // For custom search engines
-
 const engines = [
   {
     name: "Google",
@@ -34,6 +33,7 @@ function updateSearch() {
 }
 
 var engine;
+
 if (typeof browser === "undefined") {
   // we're running on chrome
   chrome.storage.local.get("searchEngine", function (res) {
@@ -92,3 +92,77 @@ openSearchButton.addEventListener("click", function (event) {
   var currentEngine = engines.find((element) => element.name == engine);
   window.location.replace(currentEngine.url);
 });
+
+// To toggle bookmarks
+var toggleBookmarksButton = document.getElementById("toggleBookmarks");
+var displayBookmarks;
+
+// By default, bookmarks are shown
+if (typeof browser === "undefined") {
+  // we're running on chrome
+  chrome.storage.local.get("showBookmarks", function (res) {
+    if (res.showBookmarks == false) {
+      displayBookmarks = false;
+    } else {
+      displayBookmarks = true;
+    }
+    toggleBookmarksButton.checked = displayBookmarks;
+    updateBookmarkPrefs();
+  });
+} else {
+  // we're running on firefox
+  browser.storage.local.get("showBookmarks").then((res) => {
+    displayBookmarks = res.showBookmarks || true; // bookmarks are shown by default
+    toggleBookmarksButton.checked = res.showBookmarks || true;
+    updateBookmarkPrefs();
+  });
+}
+
+document.getElementById("toggleBookmarks").addEventListener("click", () => {
+  console.log("clicked");
+
+  if (displayBookmarks == true) {
+    console.log("hiding bookmarks");
+
+    if (typeof browser === "undefined") {
+      // we're running on chrome
+      chrome.storage.local.set({ showBookmarks: false }, function () {
+        toggleBookmarksButton.checked = false;
+        displayBookmarks = false;
+        updateBookmarkPrefs();
+      });
+    } else {
+      // we're running on firefox
+      browser.storage.local.set({ showBookmarks: false });
+      toggleBookmarksButton.checked = false;
+      displayBookmarks = false;
+      updateBookmarkPrefs();
+    }
+  } else {
+    console.log("showing bookmarks");
+
+    if (typeof browser === "undefined") {
+      // we're running on chrome
+      chrome.storage.local.set({ showBookmarks: true }, function () {
+        toggleBookmarksButton.checked = true;
+        displayBookmarks = true;
+        updateBookmarkPrefs();
+      });
+    } else {
+      // we're running on firefox
+      browser.storage.local.set({ showBookmarks: true });
+      toggleBookmarksButton.checked = true;
+      displayBookmarks = true;
+      updateBookmarkPrefs();
+    }
+  }
+});
+
+// This is to show or hide the bookmarks based on user prefs
+function updateBookmarkPrefs() {
+  if (displayBookmarks) {
+    document.getElementById("bookmarks").style.display = "block";
+  } else {
+    document.getElementById("bookmarks").style.display = "none";
+  }
+}

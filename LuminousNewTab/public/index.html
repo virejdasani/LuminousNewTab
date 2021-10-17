@@ -39,15 +39,27 @@
   <div id="modal-background">
     <div id="modal">
       <span id="close-btn">&times;</span>
+
       <h1 id="settingsTitle">Settings</h1>
 
-      <h3>Search Engine</h3>
-      <div id="availableSearchEngines"></div>
+      <!-- Search Engine -->
+      <h3 class="settingsSubtitles">Search Engine</h3>
+      <div id="availableSearchEngines">
+        <!-- Rendered via js -->
+      </div>
       <div class="inline">
-        <p id="currentEngineName">Search Engine: </p>
-
+        <p id="currentEngineName">Current Search Engine: Google</p>
         <a href="#" id="settings_changesearch">Switch Search Engine</a>
       </div>
+
+      <!-- Bookmarks -->
+      <h3 class="settingsSubtitles">Bookmarks</h3>
+      <div class="inline">
+        <p>Show Bookmarks</p>
+        <input type="checkbox" id="toggleBookmarks">
+        <label for="toggleBookmarks"><i></i></label>
+      </div>
+
     </div>
   </div>
 
