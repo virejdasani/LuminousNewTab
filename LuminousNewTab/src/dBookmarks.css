@@ -1,0 +1,97 @@
+/* adding bookmarks */
+#dynamicBookmarks > form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+#dynamicBookmarks > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#dynamicBookmarks > form > div > label {
+  font-size: 16px;
+
+  /* conflicted by styles in index.css */
+  background-color: #fff;
+  height: auto; /* previously set to 56px in index.css */
+}
+
+#dynamicBookmarks > form > div > input {
+  height: 28px;
+}
+
+#dynamicBookmarks > form > div > input::placeholder {
+  font-size: 14px;
+}
+
+#dynamicBookmarks > form > button {
+  color: #000;
+}
+
+/* displaying bookmarks */
+#bookmarksOutput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+#bookmarksOutput > span {
+  margin: 10px;
+}
+.bookmarkBtn {
+  height: 30px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  /* display: inline-block; */
+  border-right: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid black;
+}
+.deleteBtn {
+  height: 30px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  /* display: inline-block; */
+  border-left: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid black;
+}
+
+.deleteBtn:hover,
+.bookmarkBtn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

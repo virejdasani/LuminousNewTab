@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/index.css">
+  <link rel="stylesheet" href="../src/dBookmarks.css">
   <title>New Tab</title>
 </head>
 
@@ -25,9 +26,10 @@
       <button id="openSearch" class="custom-btn btn-light">Open Google</button>
     </form>
 
-    <div id="bookmarks">
+    <!-- <div id="bookmarks">
       <div id="ntp"></div>
-    </div>
+    </div> -->
+    <div class="bookmarks" id="bookmarksOutput"></div>
   </div>
 
   <!-- Modal Open Button -->
@@ -54,6 +56,19 @@
 
       <!-- Bookmarks -->
       <h3 class="settingsSubtitles">Bookmarks</h3>
+      <div id="dynamicBookmarks">
+        <form id="addBookmarkForm" class="col-12">
+          <div class="col-4 form-group">
+            <label for="siteName">Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Enter Name for Bookmark">
+          </div>
+          <div class="col-4 form-group">
+            <label for="siteURL">URL</label>
+            <input type="text" class="form-control" id="siteURL" placeholder="Enter URL to Bookmark">
+          </div>
+          <button class="custom-btn btn-light" type="submit">Add Bookmark</button>
+        </form>
+      </div>
       <div class="inline">
         <p>Show Bookmarks</p>
         <input type="checkbox" id="toggleBookmarks">
@@ -89,6 +104,7 @@
   <script src="../src/bookmarks.js"></script>
   <script src="../src/weather.js"></script>
   <script src="../src/modal.js"></script>
+  <script src="../src/dBookmarks.js"></script>
 </body>
 
 </html>
