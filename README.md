@@ -1,6 +1,6 @@
 # Luminous New Tab
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Luminous new tab is a beautiful new tab browser extension that has an animated gradient background.                
 New tabs will show the time and let you do Google searches too!
@@ -38,6 +38,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://pradumnasaraf.me"><img src="https://avatars.githubusercontent.com/u/51878265?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pradumna Saraf</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=Pradumnasaraf" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/omrsfylmz/"><img src="https://avatars.githubusercontent.com/u/40966566?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ömer Sefa YILMAZ</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=omrsfylmz" title="Code">💻</a></td>
     <td align="center"><a href="http://infinixius.github.io"><img src="https://avatars.githubusercontent.com/u/68125679?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Infinixius</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=Infinixius" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://devanshuyadav.github.io/devanshuyadav-portfolio/"><img src="https://avatars.githubusercontent.com/u/76938941?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devanshu Yadav</b></sub></a><br /><a href="https://github.com/virejdasani/LuminousNewTab/commits?author=devanshuyadav" title="Code">💻</a></td>
   </tr>
 </table>
 
