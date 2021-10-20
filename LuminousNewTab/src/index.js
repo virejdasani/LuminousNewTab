@@ -101,7 +101,14 @@ searchButton.addEventListener("click", function (event) {
     event.preventDefault()
 
     // Google search
-    window.location.replace("https://www.google.com/search?q=" + searchBox.value)
+    searchBox.value !== "" ? window.location.replace("https://www.google.com/search?q=" + searchBox.value) : (function () {
+        searchBox.placeholder = "Enter Text Before Searching!!"
+        searchBox.classList.add("angry")
+    })()
+    setTimeout(() => {
+        searchBox.classList.remove("angry")
+        searchBox.placeholder = "Search"
+    }, 1000)
 })
 
 // To open google.com
