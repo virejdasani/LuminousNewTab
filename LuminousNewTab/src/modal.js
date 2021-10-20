@@ -1,10 +1,3 @@
-// select the open-btn button
-let openBtn = document.getElementById("open-btn");
-// select the modal-background
-let modalBackground = document.getElementById("modal-background");
-// select the close-btn
-let closeBtn = document.getElementById("close-btn");
-
 // shows the modal when the user clicks open-btn
 openBtn.addEventListener("click", function () {
   modalBackground.style.display = "block";

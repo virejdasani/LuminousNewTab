@@ -108,29 +108,6 @@ function showGreeting() {
   setTimeout(showGreeting, 2000);
 }
 
-// For google search operation
-let searchButton = document.getElementById("searchButton")
-let searchBox = document.getElementById("searchBox")
-
-// When search button is clicked
-searchButton.addEventListener("click", function (event) {
-    // Don't reload the page
-    // Without this, window.location.replace is not working
-    event.preventDefault()
-
-    // Google search
-    searchBox.value !== "" ? window.location.replace("https://www.google.com/search?q=" + searchBox.value) : (function () {
-        searchBox.placeholder = "Enter Text Before Searching!!"
-        searchBox.classList.add("angry")
-    })()
-    setTimeout(() => {
-        searchBox.classList.remove("angry")
-        searchBox.placeholder = "Search"
-    }, 1000)
-})
-
-// To open google.com
-let openGoogleButton = document.getElementById("openGoogle")
 openGoogleButton.addEventListener('click', function (event) {
     // Don't reload the page
     // Without this, window.location.replace is not working

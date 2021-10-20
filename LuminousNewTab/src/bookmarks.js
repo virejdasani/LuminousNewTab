@@ -50,6 +50,7 @@ const createItem = (bookmark) => {
   clickEvent(item);
   return item;
 };
+
 const hoverEvents = (el) => {
   let showInfo;
   el.addEventListener("mouseenter", (e) => {

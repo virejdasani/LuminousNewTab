@@ -66,24 +66,23 @@ document.getElementById("settings_changesearch").onclick = function () {
   }
 };
 
-// For search operation
-let searchButton = document.getElementById("searchButton");
-let searchBox = document.getElementById("searchBox");
-
 // When search button is clicked
 searchButton.addEventListener("click", function (event) {
   // Don't reload the page
   // Without this, window.location.replace is not working
-  event.preventDefault();
+  event.preventDefault()
 
-  // Search
-  var currentEngine = engines.find((element) => element.name == engine);
+  // Google search
+  searchBox.value !== "" ? window.location.replace("https://www.google.com/search?q=" + searchBox.value) : (function () {
+      searchBox.placeholder = "Enter Text Before Searching!!"
+      searchBox.classList.add("angry")
+  })()
+  setTimeout(() => {
+      searchBox.classList.remove("angry")
+      searchBox.placeholder = "Search"
+  }, 1000)
+})
 
-  window.location.replace(currentEngine.search + searchBox.value);
-});
-
-// To open search engine
-let openSearchButton = document.getElementById("openSearch");
 openSearchButton.addEventListener("click", function (event) {
   // Don't reload the page
   // Without this, window.location.replace is not working
@@ -93,8 +92,6 @@ openSearchButton.addEventListener("click", function (event) {
   window.location.replace(currentEngine.url);
 });
 
-// To toggle bookmarks
-var toggleBookmarksButton = document.getElementById("toggleBookmarks");
 var displayBookmarks;
 
 // By default, bookmarks are shown
