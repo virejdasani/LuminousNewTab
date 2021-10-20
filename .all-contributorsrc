@@ -1,0 +1,87 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sourhub226",
+      "name": "Sourabh Sathe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58329492?v=4",
+      "profile": "https://github.com/sourhub226",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "BreadcrumbIsTaken",
+      "name": "Brando!",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63469489?v=4",
+      "profile": "http://breadcrumb.fun",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Lateralus138",
+      "name": "Ian Pride",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21045862?v=4",
+      "profile": "https://lateralus138.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "5alidshammout",
+      "name": "Khalid shammout",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73162518?v=4",
+      "profile": "https://github.com/5alidshammout",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Pradumnasaraf",
+      "name": "Pradumna Saraf",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51878265?v=4",
+      "profile": "http://pradumnasaraf.me",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "omrsfylmz",
+      "name": "Ömer Sefa YILMAZ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40966566?v=4",
+      "profile": "https://www.linkedin.com/in/omrsfylmz/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Infinixius",
+      "name": "Infinixius",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68125679?v=4",
+      "profile": "http://infinixius.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "devanshuyadav",
+      "name": "Devanshu Yadav",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76938941?v=4",
+      "profile": "https://devanshuyadav.github.io/devanshuyadav-portfolio/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "LuminousNewTab",
+  "projectOwner": "virejdasani",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

@@ -2,63 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/index.css">
-    <title>New Tab</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/index.css">
+  <title>New Tab</title>
 </head>
 
 <body>
 
-    <div id="weatherInfo">
-        <!-- Rendered via javascript -->
-    </div>
+  <div id="weatherInfo">
+    <!-- Rendered via javascript -->
+  </div>
 
+  <div id="mainContent">
     <form id="searchForm">
-        <div id="greeting">
-            <!-- Rendered via javascript -->
-        </div>
-        <input id="searchBox" placeholder="Search"></br>
-        <button id="searchButton">Google Search</button>
-        <button id="openGoogle">Open Google</button>
+      <div id="greeting">
+        <!-- It's 4:02 pm on Sun, 17 Oct -->
+      </div>
+      <input id="searchBox" placeholder="Search"></br>
+      <button id="searchButton" class="custom-btn btn-light">Google Search</button>
+      <button id="openSearch" class="custom-btn btn-light">Open Google</button>
     </form>
 
     <div id="bookmarks">
+      <div id="ntp"></div>
+    </div>
+  </div>
+
+  <!-- Modal Open Button -->
+  <button id="open-btn" class="toggleModal">
+    <img src="../assets/img/settingsIconWhite.png" alt="" id="settingsIcon">
+  </button>
+
+  <!-- Modal Background and Modal -->
+  <div id="modal-background">
+    <div id="modal">
+      <span id="close-btn">&times;</span>
+
+      <h1 id="settingsTitle">Settings</h1>
+
+      <!-- Search Engine -->
+      <h3 class="settingsSubtitles">Search Engine</h3>
+      <div id="availableSearchEngines">
+        <!-- Rendered via js -->
+      </div>
+      <div class="inline">
+        <p id="currentEngineName">Current Search Engine: Google</p>
+        <a href="#" id="settings_changesearch">Switch Search Engine</a>
+      </div>
+
+      <!-- Bookmarks -->
+      <h3 class="settingsSubtitles">Bookmarks</h3>
+      <div class="inline">
+        <p>Show Bookmarks</p>
+        <input type="checkbox" id="toggleBookmarks">
+        <label for="toggleBookmarks"><i></i></label>
+      </div>
+
+      <!-- Number of bookmarks to display -->
+      <!-- <div class="inline" id="showBookmarksNumber">
+        <p>Show How Many Bookmarks</p>
+        <form id="bookmarksNumberForm">
+          <input type="text" value="12" id="bookmarksNumberInput">
+          <button class="invisButton" id="submitBookmarkNumber" hidden>submit</button>
+        </form>
+      </div> -->
+
+
+      <div id="about">
+        <h3 class="settingsSubtitles smallText">About</h3>
+        <p id="aboutText">Luminous New Tab is 100% open source. It is developed by <a
+            href="https://virejdasani.gitub.io">Virej
+            Dasani</a>. </br>
+          Report bugs and request features <a href="https://github.com/virejdasani/LuminousNewTab/issues/new">here</a>
+          (You can also make a <a href="https://github.com/virejdasani/LuminousNewTab">Pull Request</a>!)
+          </h5>
+      </div>
 
     </div>
+  </div>
 
-    <div>
-            <button id="openBookmarksModalButton" title="Add Bookmark" class="toggleModal">
-                +
-            </button>
-    </div>
-
-
-    <!-- Modal -->
-    <div id="modal" class="modalDialog">
-        <div>
-            <!-- The 'X' to close the modal -->
-            <button class="toggleModal close" title="Close">X</button>
-            <h1>Bookmarks/Apps functionality coming soon</h1>
-            <!-- <p id="modalBookmarks">
-                You have no Bookmarks
-            </p> -->
-            <!-- Add bookmark form -->
-            <!-- <form id="addBookmarkForm">
-                <h2>Add a bookmark</h2>
-                <input id="bookmarkURL" placeholder="Enter website url (Eg: google.com)"></br>
-                <input id="bookmarkNameField" placeholder="Bookmark Name (Eg: Google)"></br>
-                <button id="addBookmarkButton">
-                    ADD
-                </button>
-            </form> -->
-
-        </div>
-    </div>
-
-    <script src="../src/config.js"></script>
-    <script src="../src/index.js"></script>
+  <script src="../src/settings.js"></script>
+  <script src="../src/config.js"></script>
+  <script src="../src/index.js"></script>
+  <script src="../src/bookmarks.js"></script>
+  <script src="../src/weather.js"></script>
+  <script src="../src/modal.js"></script>
 </body>
 
 </html>
