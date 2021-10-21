@@ -20,7 +20,7 @@ New tabs will show the time and let you do Google searches too!
 For contributions please check out [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## 📄 License
-Distributed under the **MIT LICENSE**. See [LICENSE](/LICENSE) for more information.
+<a href="https://github.com/virejdasani/LuminousNewTab/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/virejdasani/LuminousNewTab?style=for-the-badge"></a>
 
 ## Contributors ✨
 
