@@ -73,7 +73,6 @@ let searchBox = document.getElementById("searchBox");
 // When search button is clicked
 searchButton.addEventListener("click", function (event) {
   // Don't reload the page
-  // Without this, window.location.replace is not working
   event.preventDefault();
 
   // Search
@@ -86,7 +85,6 @@ searchButton.addEventListener("click", function (event) {
 let openSearchButton = document.getElementById("openSearch");
 openSearchButton.addEventListener("click", function (event) {
   // Don't reload the page
-  // Without this, window.location.replace is not working
   event.preventDefault();
 
   var currentEngine = engines.find((element) => element.name == engine);
