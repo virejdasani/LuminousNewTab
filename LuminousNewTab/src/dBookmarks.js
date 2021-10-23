@@ -92,6 +92,7 @@ function fetchBookmarks() {
         var URL = bookmarks[i].URL;
 
         bookmarksOutput.innerHTML += '<span>' +
+            '<img class="bookmarkFavicon" src="https://besticon-demo.herokuapp.com/icon?url=' + URL + '&size=80..120..200">' +
             '<a href="' + URL + '" class="bookmarkBtn" target="_blank" >' + name + '</a>' +
             '<a name="' + URL + '" class="deleteBtn" id="deleteBtn">&times;</a>' +
             '</span>';
