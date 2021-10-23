@@ -82,10 +82,16 @@ searchButton.addEventListener("click", function (event) {
       searchBox.placeholder = "Search"
   }, 1000)
 })
+  event.preventDefault();
+
+  // Search
+  var currentEngine = engines.find((element) => element.name == engine);
+
+  window.location.replace(currentEngine.search + searchBox.value);
+});
 
 openSearchButton.addEventListener("click", function (event) {
   // Don't reload the page
-  // Without this, window.location.replace is not working
   event.preventDefault();
 
   var currentEngine = engines.find((element) => element.name == engine);
