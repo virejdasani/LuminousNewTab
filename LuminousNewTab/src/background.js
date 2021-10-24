@@ -1,7 +1,7 @@
 // If chrome, if the extension icon is clicked, new tab opens
 if (chrome) {
   chrome.browserAction.onClicked.addListener(() =>
-    chrome.tabs.create({ url: "chrome://newtab" })
+    chrome.tabs.create({ url: 'chrome://newtab' })
   );
 }
 
