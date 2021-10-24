@@ -108,14 +108,6 @@ function showGreeting() {
   setTimeout(showGreeting, 2000);
 }
 
-openGoogleButton.addEventListener('click', function (event) {
-    // Don't reload the page
-    // Without this, window.location.replace is not working
-    event.preventDefault()
-
-    window.location.replace("https://www.google.com/")
-})
-
 // opening and closing modal
 document.querySelectorAll(".toggleModal").forEach(x => {
     x.addEventListener('click', () => document.querySelector('#modal').classList.toggle('modalShown'))
