@@ -1,4 +1,4 @@
-# Luminous New Tab
+# Luminous New Tab ✨
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -7,7 +7,7 @@ New tabs will show the time and let you do Google searches too!
 
 >### Check it out on YouTube [here](https://www.youtube.com/watch?v=BWXQjgYy9-w)
 
-## ⬇ Download
+## ⬇ Download 📥
 ### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/chrome/chrome-original.svg" width="30"> [Chrome](https://chrome.google.com/webstore/detail/luminous-new-tab/gakanaedbiohimbhbddcilejbpdmobdo)
 ### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firefox/firefox-original.svg" width="30"> [Firefox](https://addons.mozilla.org/en-US/firefox/addon/luminous-tab/)
 
